@@ -24,7 +24,6 @@ repositories {
 }
 
 dependencies {
-	 classpath 'com.android.tools.build:gradle:1.0.1'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
