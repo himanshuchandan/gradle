@@ -19,6 +19,11 @@ pipeline{
             sh './gradlew compileDebugSources'
           }
         }*/
+        stage('JunitTest') {
+          steps {
+            sh 'gradle clean test'
+          }
+        }
         stage('Build') {
                 steps {
                 
