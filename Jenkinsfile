@@ -24,6 +24,11 @@ pipeline{
             sh 'gradle clean test'
           }
         }
+        stage('apk') {
+          steps {
+            sh './gradlew assembleDebug'
+          }
+        }
         stage('Build') {
                 steps {
                 
