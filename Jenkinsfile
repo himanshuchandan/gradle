@@ -9,7 +9,7 @@ pipeline{
         stage('sonar analysis') {
                 steps {
                 
-                sh 'gradle sonarqube -Dsonar.host.url=http://localhost:9000 -Dsonar.verbose=true'  
+                sh 'gradle sonarqube -Dsonar.host.url=http://localhost:9000 -Dsonar.login=574af6ac5de7c5fcc6ace6ab57a3c028e35897e5 -Dsonar.verbose=true'  
             }
         }
         
