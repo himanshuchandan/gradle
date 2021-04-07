@@ -2,11 +2,20 @@ plugins {
 	id 'org.springframework.boot' version '2.5.0-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'jacoco'
+	id "org.sonarqube" version "3.1.1"
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+
+sonarqube {
+    properties {
+        //property "sonar.sourceEncoding", "UTF-8"
+	property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
+    }
+}
 
 repositories {
 	mavenCentral()
