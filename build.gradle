@@ -13,7 +13,7 @@ sourceCompatibility = '1.8'
 sonarqube {
     properties {
         //property "sonar.sourceEncoding", "UTF-8"
-	property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
+	property 'sonar.projectName', 'AndroidDemo'
     }
 }
 
